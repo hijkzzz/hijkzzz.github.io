@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <title>胡健的主页</title>
 
 <style>
+    body {
+        font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+    }
+
     body div {
-        width: 5em;
-        height: 9em;
+        width: 8em;
+        height: 18em;
         overflow: auto;
         margin: auto;
         position: absolute;
@@ -14,18 +18,47 @@
         left: 0;
         bottom: 0;
         right: 0;
-        text-align: center;
+    }
+
+    .social_label img {
+        width: 24px;
+        vertical-align: middle;
+    }
+
+    .social_label:link,
+    .social_label:visited {
+        background-color: #f9f9f9;
+        padding: 5px 15px 5px 6px;
+        font-size: 14px;
+        line-height: 100%;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 20px;
+        outline: 0;
+        margin: 5px;
     }
 </style>
 
 <body>
     <div>
-        <a href="https://www.jianshu.com/u/9ad8303d79f7">简书</a>
-        <br> <a href="https://www.douban.com/people/hijkzzz/">豆瓣</a>
-        <br> <a href="https://github.com/hijkzzz">GitHub</a>
-        <br> <a href="https://hujian.gitbook.io">GitBook</a>
-        <br> <a href="https://www.linkedin.com/in/%E5%81%A5-%E8%83%A1-985aa015a/">LinkedIn</a>
-        <br> <a href="https://steamcommunity.com/id/9hujian">Steam</a>
+        <a href="https://www.jianshu.com/u/9ad8303d79f7" class="social_label" target="_blank"><img
+                src="/static/img/social_jianshu.png" width="24" /> &nbsp;简书</a>
+
+        <a href="https://www.douban.com/people/hijkzzz/" class="social_label" target="_blank"><img
+                src="/static/img/social_douban.png" width="24" /> &nbsp;豆瓣</a>
+
+        <a href="https://github.com/hijkzzz" class="social_label" target="_blank"><img
+                src="/static/img/social_github.png" width="24" /> &nbsp;GitHub</a>
+
+        <a href="https://hujian.gitbook.io" class="social_label" target="_blank"><img
+                src="/static/img/social_gitbook.png" width="24" /> &nbsp;GitBook</a>
+
+        <a href="https://www.linkedin.com/in/%E5%81%A5-%E8%83%A1-985aa015a/" class="social_label" target="_blank"><img
+                src="/static/img/social_linkedin.png" width="24" />
+            &nbsp;LinkedIn</a>
+
+        <a href="https://steamcommunity.com/id/9hujian" class="social_label" target="_blank"><img
+                src="/static/img/social_steam.png" width="24" /> &nbsp;Steam</a>
     </div>
 </body>
 
