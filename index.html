@@ -1,86 +1,76 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Hu Jian's Homepage</title>
-    <style>
-        body {
-            font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f0f0f0;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        .social_label {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            background-color: #f9f9f9;
-            padding: 10px 20px;
-            font-size: 16px;
-            text-decoration: none;
-            color: #333;
-            border-radius: 30px;
-            margin: 10px;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            width: 200px; /* 固定宽度 */
-        }
-        .social_label:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            background-color: #e9e9e9;
-        }
-        .social_label img {
-            width: 24px;
-            margin-right: 10px;
-            flex-shrink: 0; /* 防止图标缩小 */
-        }
-        .social_label span {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-    </style>
-</head>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title>Hu Jian's Homepage</title>
+
+<style>
+    body {
+        font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* 背景渐变 */
+    }
+
+    .social_label img {
+        width: 24px;
+        vertical-align: middle;
+        transition: transform 0.3s ease; /* 图片悬停效果 */
+    }
+
+    .social_label:link,
+    .social_label:visited {
+        background-color: #ffffff;
+        padding: 10px 20px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 25px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+        margin: 10px;
+        color: #333;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .social_label:hover {
+        background-color: #4a90e2; /* 悬停时背景色 */
+        color: white; /* 悬停时字体颜色 */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* 悬停时加大阴影 */
+        transform: translateY(-5px); /* 悬停时元素上移 */
+    }
+
+    .social_label:hover img {
+        transform: scale(1.2); /* 悬停时放大图标 */
+    }
+
+    div {
+        text-align: center;
+    }
+</style>
+
 <body>
-    <div class="container">
+    <div>
         <a href="https://www.linkedin.com/in/jian-hu-060979238" class="social_label" target="_blank">
-            <img src="/static/img/social_linkedin.png" alt="LinkedIn" />
-            <span>LinkedIn</span>
-        </a>
+            <img src="/static/img/social_linkedin.png" width="24" /> &nbsp;LinkedIn</a>
+
         <a href="https://scholar.google.com/citations?user=-xt5vGkAAAAJ" class="social_label" target="_blank">
-            <img src="/static/img/social_google_scholar.png" alt="Google Scholar" />
-            <span>Google Scholar</span>
-        </a>
+            <img src="/static/img/social_google_scholar.png" width="24"/> &nbsp;Google&nbsp;Scholar</a>
+
         <a href="https://github.com/hijkzzz" class="social_label" target="_blank">
-            <img src="/static/img/social_github.png" alt="GitHub" />
-            <span>GitHub</span>
-        </a>
+            <img src="/static/img/social_github.png" width="24" /> &nbsp;GitHub</a>
+
         <a href="https://hujian.gitbook.io" class="social_label" target="_blank">
-            <img src="/static/img/social_gitbook.png" alt="GitBook" />
-            <span>GitBook</span>
-        </a>
+            <img src="/static/img/social_gitbook.png" width="24" /> &nbsp;GitBook</a>
+
         <a href="https://www.zhihu.com/people/chu-qi-6-41/posts" class="social_label" target="_blank">
-            <img src="/static/img/social_zhihu.png" alt="Zhihu" />
-            <span>Zhihu</span>
-        </a>
+            <img src="/static/img/social_zhihu.png" width="24" /> &nbsp;Zhihu</a>
+
         <a href="https://www.jianshu.com/u/9ad8303d79f7" class="social_label" target="_blank">
-            <img src="/static/img/social_jianshu.png" alt="Jianshu" />
-            <span>Jianshu</span>
-        </a>
+            <img src="/static/img/social_jianshu.png" width="24" /> &nbsp;Jianshu</a>
     </div>
 </body>
+
 </html>
