@@ -22,45 +22,61 @@
     .social_label {
         display: inline-flex;
         align-items: center;
+        justify-content: center;
         background-color: #f9f9f9;
-        padding: 5px 15px 5px 6px;
+        padding: 10px 20px;
         font-size: 14px;
-        line-height: 100%;
+        line-height: 1.5;
         text-decoration: none;
-        border-radius: 20px;
-        margin: 5px;
+        border-radius: 25px;
+        margin: 8px;
+        color: #333;
+        transition: background-color 0.3s, box-shadow 0.3s;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     .social_label img {
         width: 24px;
         vertical-align: middle;
+        margin-right: 10px;
     }
 
     .social_label:link,
     .social_label:visited {
-        color: black;
+        color: #333;
+    }
+
+    .social_label:hover {
+        background-color: #e0e0e0;
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
     }
 </style>
 
 <body>
     <div>
-        <a href="https://www.linkedin.com/in/jian-hu-060979238" class="social_label" target="_blank"><img
-            src="/static/img/social_linkedin.png" width="24" /> &nbsp;LinkedIn</a>
+        <a href="https://www.linkedin.com/in/jian-hu-060979238" class="social_label" target="_blank">
+            <img src="/static/img/social_linkedin.png" width="24" />LinkedIn
+        </a>
 
-        <a href="https://scholar.google.com/citations?user=-xt5vGkAAAAJ" class="social_label" target="_blank"><img
-            src="/static/img/social_google_scholar.png" width="24"/> &nbsp;Google&nbsp;Scholar</a>
+        <a href="https://scholar.google.com/citations?user=-xt5vGkAAAAJ" class="social_label" target="_blank">
+            <img src="/static/img/social_google_scholar.png" width="24" />Google Scholar
+        </a>
         
-        <a href="https://github.com/hijkzzz" class="social_label" target="_blank"><img
-            src="/static/img/social_github.png" width="24" /> &nbsp;GitHub</a>
+        <a href="https://github.com/hijkzzz" class="social_label" target="_blank">
+            <img src="/static/img/social_github.png" width="24" />GitHub
+        </a>
 
-        <a href="https://hujian.gitbook.io" class="social_label" target="_blank"><img
-            src="/static/img/social_gitbook.png" width="24" /> &nbsp;GitBook</a>
+        <a href="https://hujian.gitbook.io" class="social_label" target="_blank">
+            <img src="/static/img/social_gitbook.png" width="24" />GitBook
+        </a>
 
-        <a href="https://www.zhihu.com/people/chu-qi-6-41/posts" class="social_label" target="_blank"><img
-            src="/static/img/social_zhihu.png" width="24" /> &nbsp;Zhihu</a>
+        <a href="https://www.zhihu.com/people/chu-qi-6-41/posts" class="social_label" target="_blank">
+            <img src="/static/img/social_zhihu.png" width="24" />Zhihu
+        </a>
 
-        <a href="https://www.jianshu.com/u/9ad8303d79f7" class="social_label" target="_blank"><img
-            src="/static/img/social_jianshu.png" width="24" /> &nbsp;Jianshu</a>
+        <a href="https://www.jianshu.com/u/9ad8303d79f7" class="social_label" target="_blank">
+            <img src="/static/img/social_jianshu.png" width="24" />Jianshu
+        </a>
     </div>
 </body>
 
