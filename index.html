@@ -14,25 +14,33 @@
         background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* 背景渐变 */
     }
 
-    .social_label img {
-        width: 24px;
-        vertical-align: middle;
-        transition: transform 0.3s ease; /* 图片悬停效果 */
+    .container {
+        display: flex;
+        flex-direction: column; /* 纵向排列 */
+        align-items: center; /* 中心对齐 */
     }
 
-    .social_label:link,
-    .social_label:visited {
-        background-color: #ffffff;
+    .social_label {
+        display: flex;
+        align-items: center; /* 图标和文字垂直对齐 */
+        justify-content: flex-start; /* 图标和文字左对齐 */
+        width: 250px; /* 统一按钮宽度 */
         padding: 10px 20px;
+        margin: 10px;
+        background-color: #ffffff;
         font-size: 16px;
         line-height: 1.5;
         text-decoration: none;
-        display: inline-block;
         border-radius: 25px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 阴影效果 */
-        margin: 10px;
-        color: #333;
         transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+        color: #333;
+    }
+
+    .social_label img {
+        width: 24px;
+        margin-right: 10px; /* 图标和文字之间的间距 */
+        transition: transform 0.3s ease; /* 图片悬停效果 */
     }
 
     .social_label:hover {
@@ -45,31 +53,27 @@
     .social_label:hover img {
         transform: scale(1.2); /* 悬停时放大图标 */
     }
-
-    div {
-        text-align: center;
-    }
 </style>
 
 <body>
-    <div>
+    <div class="container">
         <a href="https://www.linkedin.com/in/jian-hu-060979238" class="social_label" target="_blank">
-            <img src="/static/img/social_linkedin.png" width="24" /> &nbsp;LinkedIn</a>
+            <img src="/static/img/social_linkedin.png" alt="LinkedIn" />LinkedIn</a>
 
         <a href="https://scholar.google.com/citations?user=-xt5vGkAAAAJ" class="social_label" target="_blank">
-            <img src="/static/img/social_google_scholar.png" width="24"/> &nbsp;Google&nbsp;Scholar</a>
+            <img src="/static/img/social_google_scholar.png" alt="Google Scholar" />Google Scholar</a>
 
         <a href="https://github.com/hijkzzz" class="social_label" target="_blank">
-            <img src="/static/img/social_github.png" width="24" /> &nbsp;GitHub</a>
+            <img src="/static/img/social_github.png" alt="GitHub" />GitHub</a>
 
         <a href="https://hujian.gitbook.io" class="social_label" target="_blank">
-            <img src="/static/img/social_gitbook.png" width="24" /> &nbsp;GitBook</a>
+            <img src="/static/img/social_gitbook.png" alt="GitBook" />GitBook</a>
 
         <a href="https://www.zhihu.com/people/chu-qi-6-41/posts" class="social_label" target="_blank">
-            <img src="/static/img/social_zhihu.png" width="24" /> &nbsp;Zhihu</a>
+            <img src="/static/img/social_zhihu.png" alt="Zhihu" />Zhihu</a>
 
         <a href="https://www.jianshu.com/u/9ad8303d79f7" class="social_label" target="_blank">
-            <img src="/static/img/social_jianshu.png" width="24" /> &nbsp;Jianshu</a>
+            <img src="/static/img/social_jianshu.png" alt="Jianshu" />Jianshu</a>
     </div>
 </body>
 
